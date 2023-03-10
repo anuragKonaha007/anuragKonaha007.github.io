@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-us" style="scroll-behavior: smooth">
+    <head>
+        <meta name="author" content="Sai Anurag Varanasi's Blog">
+        <meta name="description" content="Anurag blog">
+        <meta name="theme-color" content="#0095eb">
+        <meta property="og:site_name" content="Sai Anurag Varanasi">
+        <meta property="og:title" content="Sai Anurag Varanasi">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href=//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./css/vue.css">
+        <title>Anurag's Blog</title>
+        <style> 
+            
+            .btn:hover {
+              background-color: rgb(108, 110, 115);
+            }
+            </style>    
+      
+    </head>
+    <body>
+        <nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+            <div class="container" >  
+                <div>          
+                <a class="navbar-brand" href="./" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Sai Anurag Varanasi</a>               
+                <button type="button" class="navbar-toggler" data-toggle="collapse"
+                        data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span><i class="fas fa-bars"></i></span>
+                </button>
+            </div> 
+              <div class="collapse navbar-collapse" id="navbar">
+          
+             
+                <ul class="navbar-nav ml-auto">
+          
+                  <li class="nav-item">
+                    <a class="nav-link" href="/anurag_website/index.html" data-target="#about">
+                    
+                      <span class="sp">Home</span>
+                      
+                    </a>
+                  </li>
+          
+          <!--
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects" data-target="#projects">
+                      
+                      <span>Work Experience</span>
+                      
+                    </a>
+                  </li> 
+          
+                  <li class="nav-item">
+                    <a class="nav-link" href="#proj" data-target="#proj">
+                      
+                      <span>Future Update</span>
+                      
+                    </a>
+                  </li>
+                  -->
+                  </ul>
+                  </div>
+                  </div>
+                  </nav>
+                  
+                  <div class="container">
+                    <div class="section section1" >
+                         
+
+                      <h2>Titanic - Machine Learning from Disaster </h2>
+                      <h4><a href="/asset/notebookc5ada64c58.ipynb" download="code_version1.ipynb" style="position: relative;">
+                  
+                        <button class="btn" type="button"><i class="fa fa fa-download">Download</i></button>
+                        </a> </h4>
+                      <p>
+                        The sinking of the Titanic is one of the most infamous shipwrecks in history.
+
+                        On April 15, 1912, during her maiden voyage, the widely considered “unsinkable” RMS Titanic sank after colliding with an iceberg. Unfortunately, there weren’t enough lifeboats for everyone onboard, resulting in the death of 1502 out of 2224 passengers and crew.
+                        
+                        While there was some element of luck involved in surviving, it seems some groups of people were more likely to survive than others.
+                        
+                      </p>  
+                      <p>
+                        We will make use of two similar datasets that include passenger information like name, age, gender, socio-economic class, etc. One dataset is titled train.csv and the other is titled test.csv.
+
+Train.csv will contain the details of a subset of the passengers on board (891 to be exact) and importantly, will reveal whether they survived or not, also known as the “ground truth”.
+
+The test.csv dataset contains similar information but does not disclose the “ground truth” for each passenger. We will predict these outcomes.
+                      </p>
+                      <img src="asset\images\kaggle_titanic_code1.jpg" alt="code_snippet" >
+                      <img src="asset\images\kaggle_titanic_code2.jpg" alt="code_snippet" >
+                      
+                    </div>
+                    <div class="section section2">
+                      <h2>Explanation</h2>
+                      <p>The above code demonstrates the calculation of survival percentages for male and female passengers. It is evident that the survival rate for women was significantly higher, with nearly 75% of them surviving, while only 19% of men survived. This indicates that gender is a crucial factor in determining survival, and the gender_submission.csv file can serve as a decent initial estimate.</p>
+                      <p>However, it is important to note that this submission is based solely on one column, and more complex patterns can be discovered by considering multiple columns, which could potentially lead to more accurate predictions. Nevertheless, analyzing multiple columns simultaneously can be a challenging and time-consuming task. This is where machine learning comes into play, allowing us to automate the process of pattern recognition and analysis.</p>
+                      <p>We will create a random forest model, which comprises several "trees." Each tree will examine the data of every passenger individually and decide whether the individual survived or not. The random forest model then combines the votes of each tree to make a democratic decision, with the outcome receiving the most votes considered as the final prediction.The code in the cell seeks out patterns in four different columns ("Pclass", "Sex", "SibSp", and "Parch") of the data. It uses these patterns in the train.csv file to construct the trees in the random forest model. The model then uses these trees to generate predictions for the passengers in test.csv. Finally, the new predictions are saved as a CSV file called submission.csv.</p>
+                    </div>
+                    <div class="section section3" >
+
+                        <h2 style="text-align: center; "><strong>Contribution</strong></h2>
+                        <h4><a href="/anurag_website/asset/titanic_sub2.ipynb" download="Anurag_contribution_code.ipynb" style="position: relative;">
+                  
+                          <button class="btn" type="button"><i class="fa fa fa-download">Download</i></button>
+                          </a> </h4>
+<h8><strong>Step 1: Data Cleaning</strong></h8> 
+<p>Here the training dataset is analyzed for any null values in the individual columns. The columns 'Age' and 'Embarked' has null values in it, so we will try to fix the issue by replacing null values with the appropriate mean or mode values of that attribute data. Now we will drop the irrelevant features that does not help in analyzing the Disaster, by doing this we can prevent overfitting.</p>                       
+                        <pre class="line-numbers">
+                          <code class="language-python">                       
+train_data.isnull().any()
+train_data['Age'].fillna((train_data['Age'].mean()),inplace=True)
+train_data=train_data.drop(['Embarked','Cabin','Fare','Ticket','Name'],axis=1)
+test_data['Age'].fillna((test_data['Age'].mean()),inplace=True)
+test_data=test_data.drop(['Embarked','Cabin','Fare','Ticket','Name'],axis=1)
+</code>
+</pre>
+<h8><strong>Step 2: Feature Engineering</strong></h8> 
+<p>Feature engineering is a machine learning technique that leverages data to create new variables that aren’t in the training set. Here we have created 'FamilyGroup' column by adding the number of siblings and number of parents data which represents the total number of family members that each passenger has boarded the ship. Similarly I have created a column 'AgeGroup' by dividing the age data into four groups</p>                       
+<pre class="line-numbers">
+  <code class="language-python">                              
+train_data["FamilyGroup"] = train_data["SibSp"] + train_data["Parch"]
+test_data["FamilyGroup"] = test_data["SibSp"] + test_data["Parch"]
+train_data["AgeGroup"] = pd.cut(train_data["Age"], bins=[0, 18, 35, 50, 100], labels=["Child", "Adult1", "Adult2", "Elderly"])
+test_data["AgeGroup"] = pd.cut(test_data["Age"], bins=[0, 18, 35, 50, 100], labels=["Child", "Adult1", "Adult2", "Elderly"])
+  </code></pre>
+  <h8><strong>Step 3: Feature Extraction</strong></h8> 
+  <p>  Feature extraction is the process of extracting features from a data set to identify useful information. Without distorting the original relationships or significant information, this compresses the amount of data into manageable quantities for algorithms to process. Here we have taken the columns "Pclass", "Sex", "FamilyGroup" and "AgeGroup" as features. </p>                       
+  <pre class="line-numbers">
+    <code class="language-python">      
+features = ["Pclass", "Sex", "FamilyGroup", "AgeGroup"]
+X = pd.get_dummies(train_data[features])
+y = train_data["Survived"]
+X_test = pd.get_dummies(test_data[features])
+    </code></pre>
+    <h8><strong>Step 4: Applying RandomForestClassifier</strong></h8> 
+    <p> After creating an instance of the RandomForestClassifier class, we can use the fit method to train the model on a set of input features and their corresponding labels. Once the training is complete, the model can then be used to make predictions on new data that it has not seen before using the predict method. </p>                       
+    <pre class="line-numbers">
+      <code class="language-python">        
+# Tune Model Hyperparameters
+from sklearn.model_selection import GridSearchCV
+from sklearn.ensemble import RandomForestClassifier
+param_grid = {
+"n_estimators": [50, 100, 150],
+"max_depth": [3, 5, 7],
+"min_samples_split": [2, 5, 10]
+}
+rf = RandomForestClassifier(random_state=1)
+grid_search = GridSearchCV(rf, param_grid=param_grid, cv=5)
+grid_search.fit(X, y)
+best_rf = grid_search.best_estimator_
+      </code></pre>
+      <h8><strong>Step 5: Performing Cross-validation on the model</strong></h8> 
+      <p> The below code performs 5-fold cross-validation on the machine learning model using mean imputation strategy. </p>                       
+      <pre class="line-numbers">
+        <code class="language-python">
+X = X.fillna(X.mean())
+X_test = X_test.fillna(X_test.mean())
+# Perform Cross-validation
+from sklearn.model_selection import cross_val_score
+cv_scores = cross_val_score(model, X, y, cv=5)
+print("Cross-validation scores:", cv_scores)
+print("Mean cross-validation score:", cv_scores.mean())
+        </code></pre>   
+        <h8><strong>Step 6: Training the Model</strong></h8> 
+        <p> The below code trains the model using the input data X and the target variable y. It then makes predictions on the test data X_test using the trained model, and saves the predictions to a CSV file. </p>                       
+        <pre class="line-numbers">
+          <code class="language-python">   
+best_rf.fit(X, y)
+predictions = best_rf.predict(X_test)
+predictions = model.predict(X_test)
+output = pd.DataFrame({'PassengerId': test_data.PassengerId, 'Survived': predictions})
+output.to_csv('submission2.csv', index=False)
+          </code></pre>                                                
+                      </div>
+
+
+                      <div class="section section4">
+                        <h2>Original Score versus Improved Score</h2>
+                        <img src="/anurag_website/asset/images/original_score.png" alt="code_snippet" >
+                        <img src="/anurag_website/asset/images/improved_score.png" alt="code_snippet" >
+                      </div>
+                  </div>
+
+                  <div class="container" style="background-color: rgb(241, 241, 226);">
+                    <footer class="site-footer" style="background-color: rgb(241, 241, 226);">
+                    
+                  
+                    <p class="powered-by">
+                      
+                  
+                      Concepts inspired from
+                      <a href="https://towardsdatascience.com/what-is-feature-engineering-importance-tools-and-techniques-for-machine-learning-2080b0269f10" target="_blank" rel="noopener">article on feature engineering</a> and
+                      <a href="https://www.tableau.com/learn/articles/what-is-data-cleaning" target="_blank" rel="noopener">article on Data Cleaning</a>
+                                      
+                      <span class="float-right" aria-hidden="true">
+                        <a href="#" id="back_to_top">
+                          <span class="button_icon">
+                            <i class="fas fa-chevron-up fa-2x"></i>
+                          </span>
+                        </a>
+                      </span>
+                      
+                    </p>
+                  </footer>
+                  
+                  </div>
+
+    </body>
+</html>
