@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-us" style="scroll-behavior: smooth">
+    <head>
+        <meta name="author" content="Sai Anurag Varanasi's Blog">
+        <meta name="description" content="Anurag blog">
+        <meta name="theme-color" content="#0095eb">
+        <meta property="og:site_name" content="Sai Anurag Varanasi">
+        <meta property="og:title" content="Sai Anurag Varanasi">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href=//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./css/vue.css">
+        <title>Anurag's Blog</title>
+        <style> 
+            
+            .btn:hover {
+              background-color: rgb(108, 110, 115);
+            }
+            </style>    
+      
+    </head>
+    <body>
+        <nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+            <div class="container" >  
+                <div>          
+                <a class="navbar-brand" href="./" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Sai Anurag Varanasi</a>               
+                <button type="button" class="navbar-toggler" data-toggle="collapse"
+                        data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span><i class="fas fa-bars"></i></span>
+                </button>
+            </div> 
+              <div class="collapse navbar-collapse" id="navbar">
+          
+             
+                <ul class="navbar-nav ml-auto">
+          
+                  <li class="nav-item">
+                    <a class="nav-link" href="/anurag_website/index.html" data-target="#about">
+                    
+                      <span class="sp">Home</span>
+                      
+                    </a>
+                  </li>
+          
+          
+                  <li class="nav-item">
+                    <a class="nav-link" href="\blog.html">
+                      
+                      <span>Titanic Disaster Machine Learning</span>
+                      
+                    </a>
+                  </li> 
+          
+                  <li class="nav-item">
+                    <a class="nav-link" href="Image_Classifier.html">
+                      
+                      <span>Image Classifier</span>
+                      
+                    </a>
+                  </li>
+                
+                  </ul>
+                  </div>
+                  </div>
+                  </nav>
+                  
+                  <div class="container">
+                    <div class="section section1" >
+                         
+
+                      <h2>Image Classifier</h2>
+                      <h4><a href="/asset/notebookc5ada64c58.ipynb" download="code_version1.ipynb" style="position: relative;">
+                  
+                        <button class="btn" type="button"><i class="fa fa fa-download">Download</i></button>
+                        </a> </h4>
+                        <h2>Overview</h2>
+                      <p>
+                        An image classifier is a type of machine learning model that is capable of identifying images. When provided with an image, it produces a category label for that image.
+
+To train an image classifier, you must present it with numerous examples of images that you have previously labeled. In this instance, we are teaching an image classifier to identify facial expressions by collecting pictures of various emotions like happiness, sadness, anger, disgust, fear, neutrality, and surprise.
+
+                      </p>  
+                      <img src="asset\images\facial_image_classifier_cover.jpeg" alt="code_snippet" >
+                      
+                    </div>
+                    <!--<div class="section section2">
+                      <h2>Explanation</h2>
+                      <p>The above code demonstrates the calculation of survival percentages for male and female passengers. It is evident that the survival rate for women was significantly higher, with nearly 75% of them surviving, while only 19% of men survived. This indicates that gender is a crucial factor in determining survival, and the gender_submission.csv file can serve as a decent initial estimate.</p>
+                      <p>However, it is important to note that this submission is based solely on one column, and more complex patterns can be discovered by considering multiple columns, which could potentially lead to more accurate predictions. Nevertheless, analyzing multiple columns simultaneously can be a challenging and time-consuming task. This is where machine learning comes into play, allowing us to automate the process of pattern recognition and analysis.</p>
+                      <p>We will create a random forest model, which comprises several "trees." Each tree will examine the data of every passenger individually and decide whether the individual survived or not. The random forest model then combines the votes of each tree to make a democratic decision, with the outcome receiving the most votes considered as the final prediction.The code in the cell seeks out patterns in four different columns ("Pclass", "Sex", "SibSp", and "Parch") of the data. It uses these patterns in the train.csv file to construct the trees in the random forest model. The model then uses these trees to generate predictions for the passengers in test.csv. Finally, the new predictions are saved as a CSV file called submission.csv.</p>
+                    </div>-->
+                    <div class="section section3" >
+
+                        <h2 style="text-align: center; "><strong>Programming Process & Contribution</strong></h2>
+                        <h4><a href="/anurag_website/asset/titanic_sub2.ipynb" download="Anurag_contribution_code.ipynb" style="position: relative;">
+                  
+                          <button class="btn" type="button"><i class="fa fa fa-download">Download</i></button>
+                          </a> </h4>
+<h8><strong>Step 1: Data Collection</strong></h8> 
+<p>First, the code installs the kaggle package using pip. Then, it creates a directory called ~/.kaggle and copies a file named kaggle.json to this directory. The kaggle.json file contains authentication credentials that are required to download datasets from Kaggle.
+
+    Next, the code uses the kaggle CLI to download a dataset called facial-emotion-expressions from Kaggle. The dataset is downloaded as a compressed ZIP file. Finally, the code uses the unzip command to extract the contents of the ZIP file, which can be used to train and evaluate an image classifier that can classify facial expressions based on the images in the dataset.</p>                       
+                        <pre class="line-numbers">
+                          <code class="language-python">
+                            !pip install kaggle
+                            !mkdir -p ~/.kaggle
+                            !cp kaggle.json ~/.kaggle/
+                            !kaggle datasets download -d samaneheslamifar/facial-emotion-expressions
+                            !unzip facial-emotion-expressions.zip</code>
+                        </pre>
+<h8><strong>Step 2: Data Processing</strong></h8> 
+<p>The code first sets the path for the dataset directory and prints the list of directories present in it. It then creates two lists for the names of classes in the training and validation datasets respectively. The next section sets the batch size, number of epochs, image channel, and dimensions for the input images. The code defines a function to create a dataset dataframe by iterating through the directories in the dataset path and populating the dataframe with the corresponding image path and class name. Two dataframes are created for the training and validation datasets using this function. The next part of the code displays a random sample of images from the training dataset using the vizualizing_images() function, which selects random images and their corresponding class names and displays them in a grid. Finally, a plot is created to visualize the distribution of classes in the training dataset.</p>                       
+<pre class="line-numbers">
+  <code class="language-python">      
+    #[2] reference                       
+    data_dir = '../input/facial-emotion-expressions/images'
+    print(os.listdir(data_dir))
+    classes_train = os.listdir(data_dir + "/train")
+    classes_valid = os.listdir(data_dir + "/validation")
+    print(f'Train Classes - {classes_train}')
+    print(f'Validation Classes - {classes_valid}')
+    
+    # Creating the Pathlib PATH objects
+    train_path = Path("/kaggle/input/facial-emotion-expressions/images/train")
+    valid_path = Path("/kaggle/input/facial-emotion-expressions/images/validation")
+    
+    batch_size = 64
+    epochs = 40
+    img_channel = 3
+    img_width, img_height = (48,48)
+    train_dataset_main = data_dir + "/train"
+    valid_dataset_main = data_dir + "/validation"
+    def create_dataset_df(main_path, dataset_name):
+        print(f"{dataset_name} is creating ...")
+        df = {"img_path":[],"class_names":[]}
+        for class_names in os.listdir(main_path):
+                for img_path in glob.glob(f"{main_path}/{class_names}/*"):
+                    df["img_path"].append(img_path)
+                    df["class_names"].append(class_names)
+        df = pd.DataFrame(df)
+        print(f"{dataset_name} is created !")
+        return df
+    train_df = create_dataset_df(train_dataset_main, "Train dataset")
+    
+    valid_df=create_dataset_df(valid_dataset_main, "Validation dataset")
+    train_df.sample(5)
+    valid_df.sample(5)
+    print(f"train samples: {len(train_df)} \n validation samples: {len(valid_df)}")
+    def vizualizing_images(df,n_rows,n_cols):
+        plt.figure(figsize=(10,10))
+        for i in range(n_rows*n_cols):
+            index = np.random.randint(0, len(df))
+            img = cv2.imread(df.img_path[index])
+            class_nm = df.class_names[index]
+            plt.subplot(n_rows, n_cols, i+1)
+            plt.imshow(img)
+            plt.title(class_nm)
+        plt.show()
+    vizualizing_images(train_df, 3, 3)
+    
+    plt.figure(figsize=(20,6))
+    
+  </code></pre>
+  <img src="asset\images\train_dataset.png" alt="code_snippet" >
+  <h8><strong>GPU Configuration</strong></h8> 
+  <p>The code is used to check if there are any GPUs available and if so, it sets the first available GPU as the default device for TensorFlow operations. First, the code creates a list of all available physical devices and assigns it to the variable gpus. Then, it checks if the length of the gpus list is greater than zero, which indicates that at least one GPU is available. If a GPU is available, the code sets the first GPU as the default device for TensorFlow operations using the tf.device() function. This ensures that TensorFlow will use the GPU for computations instead of the CPU, which can significantly speed up training and inference of deep learning models.</p>                       
+  <pre class="line-numbers">
+    <code class="language-python">      
+        gpus = tf.config.list_physical_devices('GPU')
+        if len(gpus) > 0:
+          tf.device(gpus[0])
+    </code></pre>
+
+  <h8><strong>Step 3: Image Classification Model</strong></h8> 
+  <p>The code snippet implements an image classification model based on the EfficientNetB2 architecture. It begins by defining a function to decode and load image files, and then sets constants for image size and batch size. The code then applies a basic transformation to resize images and a data augmentation pipeline that includes horizontal flip, random rotation, and random zoom. It also creates a TensorFlow data object from the image paths and labels, applies the transformation pipeline, shuffles, batches, and augments the data (if required). The model consists of EfficientNetB2 as the backbone, followed by a convolutional layer, global average pooling, and two fully connected layers. Finally, the model is compiled with an optimizer, loss function, and metrics. </p>                       
+  <pre class="line-numbers">
+    <code class="language-python">      
+        # Function used for Transformation [2]
+
+        def load(image , label):
+            image = tf.io.read_file(image)
+            image = tf.io.decode_jpeg(image , channels = 3)
+            return image , label
+        
+        # Define IMAGE SIZE and BATCH SIZE 
+        IMG_SIZE = 96 
+        BATCH_SIZE = 64
+        
+        # Basic Transformation
+        resize = tf.keras.Sequential([
+            tf.keras.layers.experimental.preprocessing.Resizing(IMG_SIZE, IMG_SIZE)          
+        ])
+        
+        # Data Augmentation
+        data_augmentation = tf.keras.Sequential([
+            tf.keras.layers.experimental.preprocessing.RandomFlip("horizontal"),
+            tf.keras.layers.experimental.preprocessing.RandomRotation(0.1),
+            tf.keras.layers.experimental.preprocessing.RandomZoom(height_factor = (-0.1, -0.05))
+        ])
+        
+        # Function used to Create a Tensorflow Data Object
+        AUTOTUNE = tf.data.experimental.AUTOTUNE #to find a good allocation of its CPU budget across all parameters
+        def get_dataset(paths , labels , train = True):
+            image_paths = tf.convert_to_tensor(paths)
+            labels = tf.convert_to_tensor(labels)
+        
+            image_dataset = tf.data.Dataset.from_tensor_slices(image_paths)
+            label_dataset = tf.data.Dataset.from_tensor_slices(labels)
+        
+            dataset = tf.data.Dataset.zip((image_dataset , label_dataset))
+        
+            dataset = dataset.map(lambda image , label : load(image , label))
+            dataset = dataset.map(lambda image, label: (resize(image), label) , num_parallel_calls=AUTOTUNE)
+            dataset = dataset.shuffle(1000)
+            dataset = dataset.batch(BATCH_SIZE)
+        
+            if train:
+                dataset = dataset.map(lambda image, label: (data_augmentation(image), label) , num_parallel_calls=AUTOTUNE)
+                dataset = dataset.repeat()
+            
+            return dataset
+        
+        # Creating Train Dataset object and Verifying it
+        %time 
+        train_dataset = get_dataset(train_df["img_path"], train_labels)
+        
+        #iter() returns an iterator of the given object
+        #next() returns the next number in an iterator
+        image , label = next(iter(train_dataset)) 
+        print(image.shape)
+        print(label.shape)
+        # View a sample Training Image
+        print(Le.inverse_transform(np.argmax(label , axis = 1))[0])
+        plt.imshow((image[0].numpy()/255).reshape(96 , 96 , 3))
+        
+        
+        %time 
+        val_dataset = get_dataset(valid_df["img_path"] , valid_labels , train = False)
+        
+        image , label = next(iter(val_dataset))
+        print(image.shape)
+        print(label.shape)
+        
+        # View a sample Validation Image
+        print(Le.inverse_transform(np.argmax(label , axis = 1))[0])
+        plt.imshow((image[0].numpy()/255).reshape(96 , 96 , 3))
+        
+        
+        # Building EfficientNet model
+        from tensorflow.keras.applications import EfficientNetB2
+        from tensorflow.keras.layers import Conv2D, BatchNormalization, Activation, MaxPooling2D, Dropout, Dense, Input, GlobalAveragePooling2D
+        
+        
+        backbone = EfficientNetB2(
+            input_shape=(96, 96, 3),
+            include_top=False
+        )
+        
+        n = 64
+        model = tf.keras.Sequential([
+            backbone,
+            tf.keras.layers.Conv2D(128, 3, padding='same'),
+            tf.keras.layers.LeakyReLU(alpha=0.2),
+            tf.keras.layers.GlobalAveragePooling2D(),
+            tf.keras.layers.Dense(128),
+            tf.keras.layers.LeakyReLU(alpha=0.2),
+            tf.keras.layers.Dropout(0.3),
+            tf.keras.layers.Dense(7, activation='softmax')
+        ])
+        
+        model.summary()
+        
+        # Compiling your model by providing the Optimizer , Loss and Metrics
+        model.compile(
+            optimizer=tf.keras.optimizers.Adam(learning_rate=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-07),
+            loss = 'categorical_crossentropy',
+            metrics=['accuracy' , tf.keras.metrics.Precision(name='precision'),tf.keras.metrics.Recall(name='recall')]
+        )
+    </code></pre>
+    <h8><strong>Step 4: Fine-Tuning and Callbacks</strong></h8> 
+    <p> This code trains an image classification model based on the EfficientNetB2 architecture using the fit method in TensorFlow. It employs the early_stopping callback function, which halts the training process if the validation accuracy fails to improve over two consecutive epochs. Two training cycles are performed using different callbacks. The first one uses the early_stopping function for 12 epochs, and the ModelCheckpoint callback saves the best weights obtained. Subsequently, to avoid overfitting, the first layer of the model is frozen, and the best weights are used to retrain the model for 8 epochs, while early_stopping is active. Finally, the model is evaluated on the validation set, and its training and validation accuracy and loss metrics are saved in the history variable. </p>                       
+    <pre class="line-numbers">
+      <code class="language-python">    
+        #[2]    
+        early_stopping=tf.keras.callbacks.EarlyStopping(monitor="accuracy",patience=2,mode="auto")
+        # Train the model
+        history = model.fit(
+            train_dataset,
+            steps_per_epoch=len(train_labels)//BATCH_SIZE,
+            epochs=12,
+            callbacks=[early_stopping],
+            validation_data=val_dataset,
+            validation_steps = len(valid_labels)//BATCH_SIZE,
+            class_weight=class_weight
+        )
+        model.layers[0].trainable = False
+        # Defining our callbacks 
+        checkpoint = tf.keras.callbacks.ModelCheckpoint("best_weights.h5",verbose=1,save_best_only=True,save_weights_only = True)
+        early_stop = tf.keras.callbacks.EarlyStopping(monitor="accuracy",patience=2)
+        model.summary()
+        
+        
+        # 2nd Train the model
+        history = model.fit(
+            train_dataset,
+            steps_per_epoch=len(train_labels)//BATCH_SIZE,
+            epochs=8,
+            callbacks=[checkpoint , early_stop],
+            validation_data=val_dataset,
+            validation_steps = len(valid_labels)//BATCH_SIZE,
+            class_weight=class_weight
+        )
+      </code></pre>
+      <h8><strong>Step 5: Visualization</strong></h8> 
+      <p> To evaluate the performance of a machine learning model, it is crucial to visualize its training and validation accuracy and loss. In order to achieve this, the recorded accuracy and loss values during model training can be accessed through the 'history' object in the provided code. The Matplotlib library is then utilized to create two plots; the first plot displays the training and validation accuracy, while the second plot displays the training and validation loss. The color and style of the line plots are defined by using the 'bo' and 'b' arguments, and a legend is added to the plot using the 'label' argument. To provide further context to the plots, a title is added using the 'plt.title' function, and a legend is included with the 'plt.legend' function. Lastly, the 'plt.show' function is called to display the resulting plots.</p>                       
+      <pre class="line-numbers">
+        <code class="language-python">
+            acc = history.history['accuracy']
+            val_acc = history.history['val_accuracy']
+            loss = history.history['loss']
+            val_loss = history.history['val_loss']
+            
+            import matplotlib.pyplot as plt
+            
+            epochs = range(1, len(acc) + 1)
+            
+            plt.plot(epochs, acc, 'bo', label='Training acc')
+            plt.plot(epochs, val_acc, 'b', label='Validation acc')
+            plt.title('Training and validation accuracy')
+            plt.legend()
+            
+            plt.figure()
+            
+            plt.plot(epochs, loss, 'bo', label='Training loss')
+            plt.plot(epochs, val_loss, 'b', label='Validation loss')
+            plt.title('Training and validation loss')
+            plt.legend()
+            
+            plt.show()
+            
+            # history.history
+        </code></pre>   
+        <img src="asset\images\trainVSvalidation_accuracy_graph.png" alt="code_snippet" >
+        <img src="asset\images\trainVSvalidation_loss_graph.png" alt="code_snippet" >
+        <h8><strong>Summary of My Contribution</strong></h8> 
+        <p>Google Colab provides two options for running code on a remote server: using a CPU or a GPU. A CPU is the primary processor in a computer, while a GPU is specialized for complex mathematical operations and is particularly useful for machine learning tasks involving large amounts of data. Although a GPU in Colab can significantly speed up the training process, it may come at a cost, as Colab provides a limited amount of free GPU usage, and additional usage may require payment. Conversely, using a CPU in Colab is entirely free and does not have usage limitations. Therefore, the choice between using a CPU or GPU in Google Colab depends on the size of the dataset and the complexity of the computations involved in the machine learning tasks. I have implemented the notebook using GPU as my runtime and observed the difference in the runtime thus increasing the efficiency.</p>                       
+        <p>Contributed in improving the accuracy by replacing ReLU with LeakyReLU. LeakyReLU is an activation function used in neural networks, and it differs from ReLU by introducing a small negative slope for negative inputs rather than setting them to zero. The small slope is designed to prevent the "dying ReLU" problem, which occurs when some neurons become inactive during training and cannot recover, leading to reduced effectiveness. LeakyReLU ensures that the gradient will never be zero, allowing the network to continue learning, even when some neurons output negative values. In summary, LeakyReLU is preferred over ReLU because it addresses the "dying ReLU" problem and has been shown to improve the performance of deep neural networks.</p>
+        <p>Implemented a sequential model using TensorFlow Keras, which is a high-level API for building and training deep learning models. The model has several layers that are used to extract and classify image features. It includes a pre-trained backbone, convolutional, activation, pooling, dense, dropout, and output layers. The pre-trained backbone helps the model learn important image features, and the convolutional layer applies 128 filters to the input image. The LeakyReLU activation function with an alpha value of 0.2 is applied to the output of the convolutional layer, followed by a global average pooling layer, a dense layer with 128 units, another LeakyReLU activation function, a dropout layer with a rate of 0.3, and an output layer with 7 units and a softmax activation function. Overall, this model is suitable for multi-class classification tasks involving image data.</p>                                             
+        <p>Apart from above contribution, I have implemented different approaches but none have improved the accuracy that I have got from the leakyReLU. When implemented Batch Normalization I have seen drastic downfall of accuracy. </p>                  
+        <p>To optimize the performance of the machine learning model, I have experimented with different epoch sizes and selected the best one. The optimal epoch size depends on various factors such as model complexity, dataset size, and noise in the data. By trying different epoch sizes, I have identified the best spot that balances the trade-off between overfitting and underfitting. I have trained the model with a range of epoch sizes and evaluated the performance after each epoch.</p> 
+    </div>
+
+
+                      <div class="section section4">
+                        <h2>References</h2>
+                        <p>[1] https://levity.ai/blog/what-is-an-image-classifier</p>
+                        <p>[2] https://www.kaggle.com/code/anand1994sp/facial-expression</p>
+                        
+                      </div>
+                  </div>
+                 
+                  <div class="container" style="background-color: rgb(241, 241, 226);">
+                    <footer class="site-footer" style="background-color: rgb(241, 241, 226);">
+                    
+                  </footer>
+                  
+                  </div>
+
+    </body>
+</html>
