@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en-us" style="scroll-behavior: smooth">
+    <head>
+        <meta name="author" content="Sai Anurag Varanasi's Blog">
+        <meta name="description" content="Anurag blog">
+        <meta name="theme-color" content="#0095eb">
+        <meta property="og:site_name" content="Sai Anurag Varanasi">
+        <meta property="og:title" content="Sai Anurag Varanasi">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href=//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./css/vue.css">
+        <title>Anurag's Blog</title>
+        <style> 
+            
+            .btn:hover {
+              background-color: rgb(108, 110, 115);
+            }
+            </style>    
+      
+    </head>
+    <body>
+        <nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+            <div class="container" >  
+                <a class="navbar-brand" href="./" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Anurag's Blog</a>   
+                <a itemprop="sameAs" href="//github.com/anuragKonaha007" target="_blank" rel="noopener">
+                  <i class="fab fa-github big-icon"></i>
+                </a>
+            </div>          
+                             
+                <button type="button" class="navbar-toggler" data-toggle="collapse"
+                        data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span><i class="fas fa-bars"></i></span>
+                </button>
+             
+              <div class="collapse navbar-collapse" id="navbar">
+          
+             
+                <ul class="navbar-nav ml-auto">
+          
+                  <li class="nav-item">
+                    <a class="nav-link" href="/anurag_website/index.html" data-target="#about">
+                    
+                      <span class="sp">Home</span>
+                      
+                    </a>
+                  </li>
+          
+          
+                  <li class="nav-item">
+                    <a class="nav-link" href="\blog.html">
+                      
+                      <span>Titanic Disaster Machine Learning</span>
+                      
+                    </a>
+                  </li> 
+          
+                  <li class="nav-item">
+                    <a class="nav-link" href="Image_Classifier.html">
+                      
+                      <span>Image Classifier</span>
+                      
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="NaiveBayesClassifier.html">
+                      
+                      <span>NaiveBayesClassifier</span>
+                      
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Mango_Leaf_Disease_Image_Classifier.html">
+                      
+                      <span>Mango Leaf Disease Image Classifier</span>
+                      
+                    </a>
+                  </li>
+                  </ul>
+                  </div>
+                  </div>
+                  </nav>
+                  
+                  <div class="container">
+                    <div class="section section1" >
+                         
+
+                      <h2>Mango Leaf Image Classifier</h2>
+                      <h4><a href="/asset/Mango_Leaf_Disease_Image_Classifier_v2.ipynb" download="code_version1.ipynb" style="position: relative;">
+                  
+                        <button class="btn" type="button"><i class="fa fa fa-download">Download version 2</i></button>
+                        </a> 
+                        <a href="//www.youtube.com"  style="position: relative;">
+                  
+                          <button class="btn" type="button"><i class="fa fa fa-download">YouTube Link</i></button>
+                          </a> </h4>
+                        <h2>Unleashing the Power of Convolutional Neural Networks:</h2>
+                      <p>
+                        
+                        Convolutional Neural Networks (CNNs) are a specialized type of multi-layer neural networks designed specifically to analyze visual patterns directly from pixel images, requiring minimal preprocessing. CNNs have a unique architecture inspired by the visual cortex of living organisms, enabling them to achieve state-of-the-art results in various computer vision tasks. The building blocks of CNNs consist of two fundamental components: convolutional layers and pooling layers. Although these components are relatively simple, there are countless ways to arrange them to tackle specific computer vision problems effectively.
+                      </p><p>
+The key to understanding CNNs lies in comprehending their constituent elements, such as convolutional and pooling layers. Convolutional layers apply filters to input images, generating invariant features that are then passed on to subsequent layers. These features undergo further convolution with different filters in the next layer, creating increasingly invariant and abstract representations. This process continues until the final output, which represents features that are robust to occlusions and other variations.
+                      </p><p>
+The remarkable popularity of CNNs stems from their unique architecture, which eliminates the need for manual feature extraction. Instead, the network autonomously learns to extract relevant features from the data. This capability is achieved through the convolution operation, where images are convolved with filters to generate invariant features. This automated feature extraction, combined with the hierarchical nature of CNNs, enables them to effectively capture complex visual patterns.
+                      </p><p>
+                        In practice, the real challenge lies in designing optimal model architectures that make the best use of these simple yet powerful elements of convolutional neural networks. By carefully arranging convolutional and pooling layers, researchers and practitioners can achieve outstanding performance in various computer vision applications, such as object recognition, image classification, and image segmentation.
+
+                      </p>  
+                      <img src="asset\images\cnn_flow.png" alt="code_snippet" >
+                      
+                    </div>
+                    <!--<div class="section section2">
+                      <h2>Explanation</h2>
+                      <p>The above code demonstrates the calculation of survival percentages for male and female passengers. It is evident that the survival rate for women was significantly higher, with nearly 75% of them surviving, while only 19% of men survived. This indicates that gender is a crucial factor in determining survival, and the gender_submission.csv file can serve as a decent initial estimate.</p>
+                      <p>However, it is important to note that this submission is based solely on one column, and more complex patterns can be discovered by considering multiple columns, which could potentially lead to more accurate predictions. Nevertheless, analyzing multiple columns simultaneously can be a challenging and time-consuming task. This is where machine learning comes into play, allowing us to automate the process of pattern recognition and analysis.</p>
+                      <p>We will create a random forest model, which comprises several "trees." Each tree will examine the data of every passenger individually and decide whether the individual survived or not. The random forest model then combines the votes of each tree to make a democratic decision, with the outcome receiving the most votes considered as the final prediction.The code in the cell seeks out patterns in four different columns ("Pclass", "Sex", "SibSp", and "Parch") of the data. It uses these patterns in the train.csv file to construct the trees in the random forest model. The model then uses these trees to generate predictions for the passengers in test.csv. Finally, the new predictions are saved as a CSV file called submission.csv.</p>
+                    </div>-->
+                    <div class="section section3" >
+
+                        <h2 style="text-align: center; "><strong>Algorithm Explanation</strong></h2>
+                        
+<h8><strong>Step 1: Data Collection</strong></h8> 
+<p>
+
+  The given set of commands is used to download a dataset from Kaggle that contains information about mango leaf diseases. The commands install the Kaggle package, create a directory to store Kaggle API credentials, copy the necessary credentials to the appropriate directory, and download the dataset using the Kaggle API. Finally extracting the file content into 'images' folder.
+
+</p>                       
+                        <pre class="line-numbers">
+                          <code class="language-python">
+                            !pip install kaggle
+                            !mkdir -p ~/.kaggle
+                            !cp kaggle.json ~/.kaggle/
+                            !kaggle datasets download -d aryashah2k/mango-leaf-disease-dataset
+                            
+                            #extracting files 
+                            from zipfile import ZipFile
+                            
+                            with ZipFile('mango-leaf-disease-dataset.zip', 'r') as f:
+                            
+                             #extract in different directory
+                             f.extractall('images')</code>
+                        </pre>
+<h8><strong>Step 2: Data Processing</strong></h8> 
+<p>
+  The code snippet organizes a set of images into train, validation, and test sets according to the specified ratios and moves them to their respective directories. It also removes any empty subfolders once the images have been moved. 
+ 
+</p>                       
+<pre class="line-numbers">
+  <code class="language-python">      
+    import os
+    import shutil
+    import random
+    import tensorflow as tf
+    import numpy as np
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    from pathlib import Path
+    import glob
+    import cv2
+    
+    root_directory = "/content/images" 
+    train_ratio = 0.7  
+    val_ratio = 0.15  
+    test_ratio = 0.15  
+    
+    subfolders = [f.name for f in os.scandir(root_directory) if f.is_dir()]
+    
+    for subfolder in subfolders:
+        subfolder_path = os.path.join(root_directory, subfolder)
+        images = [f.name for f in os.scandir(subfolder_path) if f.is_file()]
+    
+        random.shuffle(images)
+    
+        num_images = len(images)
+        num_train = int(num_images * train_ratio)
+        num_val = int(num_images * val_ratio)
+        num_test = num_images - num_train - num_val
+    
+        train_images = images[:num_train]
+        val_images = images[num_train:num_train + num_val]
+        test_images = images[num_train + num_val:]
+    
+        train_dir = os.path.join(root_directory, 'train', subfolder)
+        val_dir = os.path.join(root_directory, 'val', subfolder)
+        test_dir = os.path.join(root_directory, 'test', subfolder)
+        os.makedirs(train_dir, exist_ok=True)
+        os.makedirs(val_dir, exist_ok=True)
+        os.makedirs(test_dir, exist_ok=True)
+    
+        for image in train_images:
+            src = os.path.join(subfolder_path, image)
+            dst = os.path.join(train_dir, image)
+            shutil.move(src, dst)
+    
+        for image in val_images:
+            src = os.path.join(subfolder_path, image)
+            dst = os.path.join(val_dir, image)
+            shutil.move(src, dst)
+    
+        for image in test_images:
+            src = os.path.join(subfolder_path, image)
+            dst = os.path.join(test_dir, image)
+            shutil.move(src, dst)
+    
+        os.rmdir(subfolder_path) #deleting empty folders
+    
+  </code></pre>
+
+<pre class="line-numbers">
+<code class="language-python">
+  #optional code for debugging- can be excluded
+  #testing whether the subfolders are formed after the above action
+  data_dir_of_test = '../content/images/test'
+  print(os.listdir(data_dir))
+</code></pre>
+<img src="asset\images\labels_list.png" alt="code_snippet" >
+  
+ 
+  <p>
+     Creating the Pathlib PATH objects for train and validation and test dataset
+  </p>                       
+  <pre class="line-numbers">
+    <code class="language-python">      
+      train_path = Path("/content/images/train")
+      valid_path = Path("/content/images/val")
+      test_path=Path("/content/images/test")
+    </code></pre>
+
+    <p>
+      Finding the average size of images for considering resizing the images 
+    </p>                       
+    <pre class="line-numbers">
+      <code class="language-python">      
+        #finding the average size of images 
+from PIL import Image
+
+data_folder = "/content/images/test"
+
+total_width = 0
+total_height = 0
+num_images = 0
+
+# Iterate over subfolders (labels)
+for label in os.listdir(data_folder):
+    label_folder = os.path.join(data_folder, label)
+    if os.path.isdir(label_folder):
+        # Iterate over image files in the label folder
+        for image_file in os.listdir(label_folder):
+            if image_file.endswith(".jpg") or image_file.endswith(".png"):
+                # Open the image using PIL
+                image_path = os.path.join(label_folder, image_file)
+                image = Image.open(image_path)
+
+                # Accumulate the width and height
+                width, height = image.size
+                total_width += width
+                total_height += height
+                num_images += 1
+
+# Calculate the average width and height
+avg_width = total_width / num_images
+avg_height = total_height / num_images
+
+# Print the average width and height
+print("Average Width:", avg_width)
+print("Average Height:", avg_height)
+      </code></pre>
+      <p>Average Width: 273.92333333333335
+        Average Height: 261.5283333333333</p>
+   <p>
+    The given code snippet defines various variables related to a machine learning model for image processing. It includes parameters such as batch size, number of epochs, image channels, image dimensions, and paths to the training and validation dataset directories. These variables provide important information for training and evaluating the model on image data.
+   </p>
+   <pre class="line-numbers">
+    <code class="language-python">  
+   batch_size = 72
+epochs = 45
+img_channel = 9
+data_dir="../content/images"
+img_width, img_height = (273.92,261.52)
+train_dataset_main = data_dir + "/train"
+valid_dataset_main = data_dir + "/val"   </code></pre>
+
+<p>
+  The create_dataset_df function is designed to create a pandas DataFrame from image files located in a specified main path directory. It iterates through the directories and subdirectories within the main path, collects the image paths and their corresponding class names, and returns a DataFrame with these details. This function helps organize image data into a tabular format for easier analysis and further processing.
+</p>
+ <pre class="line-numbers">
+  <code class="language-python">  
+    #creating DF's
+    def create_dataset_df(main_path, dataset_name):
+        print(f"{dataset_name} is creating ...")
+        df = {"img_path":[],"class_names":[]}
+        for class_names in os.listdir(main_path):
+                for img_path in glob.glob(f"{main_path}/{class_names}/*"):
+                    df["img_path"].append(img_path)
+                    df["class_names"].append(class_names)
+        df = pd.DataFrame(df)
+        print(f"{dataset_name} is created !")
+        return df
+  </code></pre>
+  <h8><strong>One Hot Encoding</strong></h8> 
+  <p>
+    The code prepares the training and validation datasets by creating DataFrames, visualizes random images from the training dataset, displays the class distribution, encodes the class labels, applies one-hot encoding, calculates class weights, and retrieves the shape of an input image.
+  </p>
+   <pre class="line-numbers">
+    <code class="language-python">  
+      train_df = create_dataset_df(train_dataset_main, "Train dataset")
+
+      valid_df=create_dataset_df(valid_dataset_main, "Validation dataset")
+      
+      print(f"train samples: {len(train_df)} \n validation samples: {len(valid_df)}")
+      def vizualizing_images(df,n_rows,n_cols):
+          plt.figure(figsize=(10,10))
+          for i in range(n_rows*n_cols):
+              index = np.random.randint(0, len(df))
+              img = cv2.imread(df.img_path[index])
+              class_nm = df.class_names[index]
+              plt.subplot(n_rows, n_cols, i+1)
+              plt.imshow(img)
+              plt.title(class_nm)
+          plt.show()
+      vizualizing_images(train_df, 3, 3)
+      
+      plt.figure(figsize=(25,5))
+      # train dataset
+      plt.subplot(1,2,1)
+      sns.countplot(data=train_df.sort_values("class_names"),x="class_names")
+      plt.title("Train dataset")
+      plt.xticks(rotation = 60)
+      # validation dataset
+      plt.subplot(1,2,2)
+      sns.countplot(data=valid_df.sort_values("class_names"),x="class_names")
+      plt.title("Validation dataset")
+      plt.xticks(rotation = 60)
+      
+      plt.show()
+      
+      from sklearn.preprocessing import LabelEncoder 
+      
+      Le = LabelEncoder()
+      train_df["class_names"] = Le.fit_transform(train_df["class_names"])
+      
+      #train_df["class_names"].value_counts()
+      
+      
+      valid_df["class_names"] = Le.transform(valid_df["class_names"])
+      #One Hot encoding
+      train_labels = tf.keras.utils.to_categorical(train_df["class_names"])
+      valid_labels = tf.keras.utils.to_categorical(valid_df["class_names"])
+      train_labels[:10]
+      train_labels.sum(axis=0)
+      
+      # Compute class weights 
+      
+      classTotals = train_labels.sum(axis=0)
+      classWeight = classTotals.max() / classTotals
+      
+      class_weight = {e : weight for e , weight in enumerate(classWeight)}
+      print(class_weight)
+      input_image = cv2.imread(train_df.img_path[0])
+      
+      input_image.shape 
+    </code></pre>
+<p>
+  Train dataset is creating ...
+  Train dataset is created !
+  Validation dataset is creating ...
+  Validation dataset is created !
+  train samples: 2800 
+   validation samples: 600</p>
+<img src="asset\images\encode1.png" alt="code_snippet" >
+<img src="asset\images\encode2.png" alt="code_snippet" >
+
+<h8><strong> Step 3: Creating Model using EfficientNetB2 Architecture and CNN</strong></h8> 
+<p>
+  This code sets up the data loading and preprocessing pipelines, creates the training and validation datasets, builds a custom model architecture based on EfficientNetB2, and compiles the model for training.
+
+</p>
+<pre class="line-numbers">
+  <code class="language-python">  
+    def load(image , label):
+    image = tf.io.read_file(image)
+    image = tf.io.decode_jpeg(image , channels = 3)
+    return image , label
+
+IMG_SIZE = 96
+BATCH_SIZE = 64
+
+# Basic Transformation
+resize = tf.keras.Sequential([
+    tf.keras.layers.experimental.preprocessing.Resizing(IMG_SIZE, IMG_SIZE)          
+])
+
+# Data Augmentation
+data_augmentation = tf.keras.Sequential([
+    tf.keras.layers.experimental.preprocessing.RandomFlip("horizontal"),
+    tf.keras.layers.experimental.preprocessing.RandomRotation(0.1),
+    tf.keras.layers.experimental.preprocessing.RandomZoom(height_factor = (-0.1, -0.05))
+])
+
+# Function used to Create a Tensorflow Data Object
+AUTOTUNE = tf.data.experimental.AUTOTUNE #to find a good allocation of its CPU budget across all parameters
+def get_dataset(paths , labels , train = True):
+    image_paths = tf.convert_to_tensor(paths)
+    labels = tf.convert_to_tensor(labels)
+
+    image_dataset = tf.data.Dataset.from_tensor_slices(image_paths)
+    label_dataset = tf.data.Dataset.from_tensor_slices(labels)
+
+    dataset = tf.data.Dataset.zip((image_dataset , label_dataset))
+
+    dataset = dataset.map(lambda image , label : load(image , label))
+    dataset = dataset.map(lambda image, label: (resize(image), label) , num_parallel_calls=AUTOTUNE)
+    dataset = dataset.shuffle(1000)
+    dataset = dataset.batch(BATCH_SIZE)
+
+    if train:
+        dataset = dataset.map(lambda image, label: (data_augmentation(image), label) , num_parallel_calls=AUTOTUNE)
+        dataset = dataset.repeat()
+    
+    return dataset
+
+# Creating Train Dataset object and Verifying it
+%time 
+train_dataset = get_dataset(train_df["img_path"], train_labels)
+
+#iter() returns an iterator of the given object
+#next() returns the next number in an iterator
+image , label = next(iter(train_dataset)) 
+print(image.shape)
+print(label.shape)
+# View a sample Training Image
+print(Le.inverse_transform(np.argmax(label , axis = 1))[0])
+plt.imshow((image[0].numpy()/255).reshape(96 , 96 , 3))
+
+
+%time 
+val_dataset = get_dataset(valid_df["img_path"] , valid_labels , train = False)
+
+image , label = next(iter(val_dataset))
+print(image.shape)
+print(label.shape)
+
+# View a sample Validation Image
+print(Le.inverse_transform(np.argmax(label , axis = 1))[0])
+plt.imshow((image[0].numpy()/255).reshape(96 , 96 , 3))
+
+
+# Building EfficientNet model
+from tensorflow.keras.applications import EfficientNetB2
+from tensorflow.keras.layers import Conv2D, BatchNormalization, Activation, MaxPooling2D, Dropout, Dense, Input, GlobalAveragePooling2D
+
+
+backbone = EfficientNetB2(
+    input_shape=(96, 96, 3),
+    include_top=False
+)
+
+n = 64
+model = tf.keras.Sequential([
+    backbone,
+    tf.keras.layers.Conv2D(128, 3, padding='same'),
+    tf.keras.layers.BatchNormalization(),
+    tf.keras.layers.Activation('relu'),
+    tf.keras.layers.Conv2D(64, 3, padding='same'),
+    tf.keras.layers.BatchNormalization(),
+    tf.keras.layers.Activation('relu'),
+    tf.keras.layers.Conv2D(32, 3, padding='same'),
+    tf.keras.layers.BatchNormalization(),
+    tf.keras.layers.Activation('relu'),
+    tf.keras.layers.GlobalAveragePooling2D(),
+    tf.keras.layers.Dense(128),
+    tf.keras.layers.Activation('relu'),
+    tf.keras.layers.Dropout(0.3),
+    tf.keras.layers.Dense(8, activation='softmax')
+])
+
+model.summary()
+
+# Compiling your model by providing the Optimizer , Loss and Metrics
+model.compile(
+    optimizer=tf.keras.optimizers.Adam(learning_rate=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-07),
+    loss = 'categorical_crossentropy',
+    metrics=['accuracy' , tf.keras.metrics.Precision(name='precision'),tf.keras.metrics.Recall(name='recall')]
+)
+#
+len(train_labels),len(valid_labels)
+
+  </code></pre>
+  <img src="asset\images\en1.png" alt="code_snippet" >
+  
+    <h8><strong>Step 4: Fine-Tuning and Callbacks</strong></h8> 
+    <p> 
+      The provided code trains a deep learning model using TensorFlow's Keras API. It incorporates an early stopping mechanism to monitor the accuracy during training and stops the training process if there is no improvement after a certain number of epochs. Additionally, it saves the best weights of the model based on the validation loss using a checkpoint callback. The first layer's weights are frozen to prevent further updates. The model is then trained for a specified number of epochs again, utilizing the checkpoint and early stopping callbacks. This approach ensures that the model is trained efficiently and stops early if there is no significant improvement in accuracy.
+    </p>                       
+    <pre class="line-numbers">
+      <code class="language-python">    
+        early_stopping=tf.keras.callbacks.EarlyStopping(monitor="accuracy",patience=2,mode="auto")
+        # Train the model
+        history = model.fit(
+            train_dataset,
+            steps_per_epoch=len(train_labels)//BATCH_SIZE,
+            epochs=12,
+            callbacks=[early_stopping],
+            validation_data=val_dataset,
+            validation_steps = len(valid_labels)//BATCH_SIZE,
+            class_weight=class_weight
+        )
+        model.layers[0].trainable = False
+        # Defining our callbacks 
+        checkpoint = tf.keras.callbacks.ModelCheckpoint("best_weights.h5",verbose=1,save_best_only=True,save_weights_only = True)
+        early_stop = tf.keras.callbacks.EarlyStopping(monitor="accuracy",patience=2)
+        model.summary()
+        
+        
+        # 2nd Train the model
+        history = model.fit(
+            train_dataset,
+            steps_per_epoch=len(train_labels)//BATCH_SIZE,
+            epochs=8,
+            callbacks=[checkpoint , early_stop],
+            validation_data=val_dataset,
+            validation_steps = len(valid_labels)//BATCH_SIZE,
+            class_weight=class_weight
+        )
+      </code></pre>
+      <img src="asset\images\early.png" alt="code_snippet" >
+      <h8><strong>Step 5: Visualization</strong></h8> 
+      <p>
+        In order to assess the performance of a machine learning model, it is essential to visually examine the training and validation accuracy as well as the loss. In the provided code, this is accomplished by accessing the recorded accuracy and loss values stored in the 'history' object. Matplotlib, a popular data visualization library, is then employed to generate two plots: one illustrating the training and validation accuracy, and another depicting the training and validation loss. The appearance of the line plots is customized using the 'bo' and 'b' arguments to specify color and style. To enhance the interpretability of the plots, a legend is incorporated using the 'label' argument, providing clear labels for each line. Captions are added to the plots through the 'plt.title' function, and a legend is included utilizing the 'plt.legend' function. Finally, the 'plt.show' function is invoked to present the resulting plots.
+      </p>                       
+      <pre class="line-numbers">
+        <code class="language-python">
+            acc = history.history['accuracy']
+            val_acc = history.history['val_accuracy']
+            loss = history.history['loss']
+            val_loss = history.history['val_loss']
+            
+            import matplotlib.pyplot as plt
+            
+            epochs = range(1, len(acc) + 1)
+            
+            plt.plot(epochs, acc, 'bo', label='Training acc')
+            plt.plot(epochs, val_acc, 'b', label='Validation acc')
+            plt.title('Training and validation accuracy')
+            plt.legend()
+            
+            plt.figure()
+            
+            plt.plot(epochs, loss, 'bo', label='Training loss')
+            plt.plot(epochs, val_loss, 'b', label='Validation loss')
+            plt.title('Training and validation loss')
+            plt.legend()
+            
+            plt.show()
+            
+            # history.history
+        </code></pre>   
+        <img src="asset\images\leaf_classifier_v2_train_val_acc.png" alt="code_snippet" >
+        <img src="asset\images\leaf_classifier_v2_train_val_loss.png" alt="code_snippet" >
+        <h8><strong>Contribution</strong></h8> 
+        <p>My contribution to the code includes adding batch normalization and activation functions (BatchNormalization and Activation('relu')) after each Conv2D layer. These additions improve the stability and performance of the model by normalizing the layer inputs and introducing non-linearity. Batch normalization helps in reducing internal covariate shift and improves the generalization of the model. Activation functions introduce non-linearity, allowing the model to learn complex relationships between features. These enhancements contribute to the overall effectiveness and accuracy of the model in image classification tasks.</p>
+        <p>Implemented a sequential model using TensorFlow Keras, which is a high-level API for building and training deep learning models. The model has several layers that are used to extract and classify image features. It includes a pre-trained backbone, convolutional, activation, pooling, dense, dropout, and output layers. The pre-trained backbone helps the model learn important image features, and the convolutional layer applies 128 filters to the input image.</p>                                                              
+        <p>I have calculated average width and height of images to provide valuable insights into the characteristics of the dataset and assist in making informed decisions related to preprocessing, model design, and resource allocation, leading to better model performance and efficient training.</p>
+        <p>In order to enhance the performance of the machine learning model, I conducted experiments with different epoch sizes and carefully selected the most effective one. Determining the optimal epoch size involves considering factors such as model complexity, dataset size, and data noise. Through a systematic approach, I explored various epoch sizes to find the optimal point that achieves a balance between overfitting and underfitting. I iteratively trained the model with different epoch sizes and assessed its performance after each training cycle. This rigorous evaluation process enabled me to identify the ideal epoch size that maximizes the model's capabilities.</p> 
+        
+        <p>Note:I have implemented the image classifier using different approches and saved seperate notebooks as version 1 and version 2 in my github</p>
+        <h8><strong>Challenges</strong></h8> 
+        <p>Building an image classifier presented challenges in resizing images to balance detail preservation and avoid overfitting. Maintaining the aspect ratio was crucial to prevent distortion and artifacts. Selecting an appropriate image size involved finding the right balance to avoid loss of critical information or introducing noise. Data augmentation techniques were implemented to address overfitting and enhance generalization by introducing variability. Overcoming these challenges ensured an effective image classifier with accurate representations and improved performance on unseen images.
+          My contribution to the code includes adding batch normalization and activation functions (BatchNormalization and Activation('relu')) after each Conv2D layer. These additions improve the stability and performance of the model by normalizing the layer inputs and introducing non-linearity. Batch normalization helps in reducing internal covariate shift and improves the generalization of the model. Activation functions introduce non-linearity, allowing the model to learn complex relationships between features. These enhancements contribute to the overall effectiveness and accuracy of the model in image classification tasks.</p>
+          
+      </div>
+
+
+                      <div class="section section4">
+                        <h2>References</h2>
+                        <p>[1] https://levity.ai/blog/what-is-an-image-classifier</p>
+                        <p>[2] https://www.kaggle.com/code/anand1994sp/facial-expression</p>
+                        <p>[3] https://medium.com/analytics-vidhya/image-classification-techniques-83fd87011cac</p>
+                        <p>[4] https://developer.apple.com/documentation/createml/creating-an-image-classifier-model</p>
+                        <p>[5] https://www.geeksforgeeks.org/how-to-find-width-and-height-of-an-image-using-python/</p>
+                        <p>[6] https://www.studytonight.com/python-howtos/how-to-unzip-file-in-python#:~:text=To%20unzip%20it%20first%20create,it%20will%20overwrite%20the%20path.</p>
+                        <p>[7] https://www.tensorflow.org/tutorials/images/classification</p>
+                      </div>
+                  </div>
+                 
+                  <div class="container" style="background-color: rgb(241, 241, 226);">
+                    <footer class="site-footer" style="background-color: rgb(241, 241, 226);">
+                    
+                  </footer>
+                  
+                  </div>
+
+    </body>
+</html>
